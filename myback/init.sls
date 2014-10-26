@@ -15,3 +15,13 @@ myback:
     - user: root
     - group: root
     - template: jinja
+
+myback2:
+  file:
+    - managed
+    - name: /usr/bin/myback2
+    - source: salt://myback/files/myback2
+    - mode: 700
+    - user: root
+    - group: root
+    - template: jinja
